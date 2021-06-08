@@ -1,13 +1,17 @@
+import time
+
+
 def word_repeater():
     '''Function to do Word Repeater'''
     word = input("Enter Which Word You'd Like to Repeat\n")
-    times = input(f"Enter How Many Times You'd Like to Repeat {word} as an integer.\n")
+    times = input(f"Enter How Many Times You'd Like to Repeat '{word}' as an integer.\n")
     i_times = int(times)
     ticker = 0
     while ticker < i_times:
         count = ticker + 1
-        print(f"{count}." + f" {word}")
+        print(f"{count}." + f" {word}\n")
         ticker = ticker + 1
+        time.sleep(0.1)
     print("All Done!")
     def do_again():
         """Function to repeat or exit program"""
